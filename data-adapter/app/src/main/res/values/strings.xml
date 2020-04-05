@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Data Adapter</string>
+    <string name="name">Name</string>
+    <string name="country">Country</string>
+    <string name="students_list">STUDENTS LIST</string>
+    <string name="is_from">is from</string>
+</resources>
