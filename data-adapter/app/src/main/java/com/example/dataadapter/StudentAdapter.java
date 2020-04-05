@@ -10,21 +10,25 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
+import java.util.ArrayList;
+
 public class StudentAdapter extends ArrayAdapter<Student> {
 
-    public StudentAdapter(@NonNull Context context, int resource) {
-        super(context, resource);
+    public StudentAdapter(@NonNull Context context, ArrayList<Student> resource) {
+        super(context, 0, resource);
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        // Get the data item for this position
-        Student student = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_student, parent, false);
         }
+
+        // Get the data item for this position
+        Student student = getItem(position);
+
         // Lookup view for data population
         TextView tvName = (TextView) convertView.findViewById(R.id.tv_name);
         TextView tvCountry = (TextView) convertView.findViewById(R.id.tv_country);

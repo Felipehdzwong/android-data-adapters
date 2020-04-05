@@ -38,7 +38,7 @@ public class Student {
         users.add(new Student("Paul", "Ireland"));
         users.add(new Student("Rodrigo", "Brazil"));
         users.add(new Student("Emiliano", "United States"));
-        users.add(new Student("Lourenco", "Estonia"));
+        users.add(new Student("Rainer", "Estonia"));
         return users;
     }
 }
