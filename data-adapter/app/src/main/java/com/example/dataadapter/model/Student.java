@@ -1,8 +1,9 @@
-package com.example.dataadapter;
+package com.example.dataadapter.model;
 
 import java.util.ArrayList;
 
 public class Student {
+    private int picture;
     private String name;
     private String country;
 
@@ -11,12 +12,24 @@ public class Student {
         this.country = country;
     }
 
+    public Student(String name){
+        this.name = name;
+    }
+
+    public int getPicture() {
+        return picture;
+    }
+
     public String getName() {
         return name;
     }
 
     public String getCountry() {
         return country;
+    }
+
+    public void setPicture(int picture) {
+        this.picture = picture;
     }
 
     public void setName(String name) {

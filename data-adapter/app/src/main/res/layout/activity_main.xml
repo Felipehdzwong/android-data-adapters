@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <TextView
         android:id="@+id/tv_title"
@@ -19,8 +19,8 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <ListView
-        android:id="@+id/lv_students"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_students"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tv_title"
@@ -33,5 +33,5 @@
         android:layout_toEndOf="@id/tv_title"
         android:textFilterEnabled="false">
 
-    </ListView>
+    </androidx.recyclerview.widget.RecyclerView>
 </RelativeLayout>
